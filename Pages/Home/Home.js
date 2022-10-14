@@ -33,6 +33,7 @@ const Home = () =>{
         return TouchID.authenticate()
         .then(success => {
             console.log('Authenticated Successfully');
+            console.log(success);
             showDialog();
         })
         .catch(error => {
